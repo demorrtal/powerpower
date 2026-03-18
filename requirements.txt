@@ -1,0 +1,10 @@
+# python-telegram-bot с job-queue — включает APScheduler внутри PTB
+# НЕ устанавливай apscheduler отдельно — будет конфликт версий
+python-telegram-bot[job-queue]==21.5
+
+# .env файл поддержка — читает BOT_TOKEN и настройки из файла
+python-dotenv==1.0.1
+
+# zoneinfo (ZoneInfo) встроен в Python 3.9+, но на macOS нужна база tzdata
+# если получаешь ZoneInfoNotFoundError — раскомментируй:
+# tzdata==2024.1
